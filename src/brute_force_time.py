@@ -31,10 +31,6 @@ class BruteForceTime:
         return charset_space
     
     def _contains_special_characters(self) -> bool:
-        """
-        Checks if the password contains any special characters from a predefined set.
-        This set can be expanded as needed.
-        """
         special_characters = "!@#$%^&*()-_=+[{]};:'\\",<.>/?\\\\|`~"
         return any(c in special_characters for c in self.password)
     

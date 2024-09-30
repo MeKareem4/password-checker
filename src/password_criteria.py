@@ -17,8 +17,5 @@ class PasswordCriteria:
         }
     
     def _contains_special_characters(self) -> bool:
-        """
-        Check if the password contains any special characters from the defined set.
-        """
         special_characters = "!@#$%^&*()-_=+[{]};:'\\",<.>/?\\\\|`~"
         return any(c in special_characters for c in self.password)
